@@ -43,7 +43,7 @@ let age_2 = 18
 // 28. Создать переменную “age_3” и присвоить ей значение 60
 let age_3 = 60 
 // 29. Создать if в котором будите проверять значение переменной age_
-if (age_1 < age_2) { 1
+if (age_1 < age_2) {1
 // 30. Если age_1 < age_2, вывести в консоль “You don’t have access cause your age is ” + age_1 + “ It’s less then ”
 console.log ("you don't have access cause your age is " + age_1 + "it's less then") 
 }
