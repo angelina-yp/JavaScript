@@ -2,18 +2,39 @@
 function f1(p1,p2){
     let a1 = p1
     let a2 = p2
-    result_text = "hello!"+p1+" "+p2
-    console.log(result_text)
-    return result_text
+    result = p1 + p2
+    console.log(result)
+    return result
 }
 
-f1("Anna", 10)
+f1(2, 3)
 
 //2) Сделать функцию которая вернёт в консоль квадрат переданного числа
+function f2(p1){
+    let a1 = p1
+    
+    result = p1 * p1
+    console.log(result)
+    return result
+}
+
+f2(5)
 //3) Сделать функцию. На вход принимет 3 параметра (Ф,И,О). Вернёт JSON
 //{"name":И,
 //"surname":Ф,
 //"middlename":О}
+function f3(a1,a2,a3){
+    
+    console.log(JSON.stringify({ name: a1, surname: a2, middlename: a3 }));
+    
+}
+
+f3('Angelina', 'Poleshchuk','Yrevna')
+
+
+
+
+
 //4) вывести в консоль переменную-массив в которой будут все чётные числа. Переменную возвращяет функция которая на вход принимает массив чисел.
 //Если чётных чисел не нашлось, то функция вернёт текст "No even numbers"
 //5) Сделать функцию которая вернёт количество букв 'a' в переданном в неё слове.
