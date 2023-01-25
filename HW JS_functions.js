@@ -13,7 +13,7 @@ f1(2, 3)
 function f2(p1){
     let a1 = p1
     
-    result = p1 * p1
+    result = p1 **2
     console.log(result)
     return result
 }
@@ -34,21 +34,18 @@ f3('Angelina', 'Poleshchuk','Yrevna')
 //4) вывести в консоль переменную-массив в которой будут все чётные числа. Переменную возвращает функция которая на вход принимает массив чисел.
 //Если чётных чисел не нашлось, то функция вернёт текст "No even numbers"
 
-//var arr = [4, 5, 7, 8, 14, 45, 76];
 
-//function f4(a) {
-  //var ar = [];
 
-  //for (var i = 0; i < a.length; i++) {
-    //ar.push(a[2 * i + 1]);
-  //}
+function f4(a) {
+  
+if (array [i]%2==0)
 
-  //return ar;
-//}
+}
 
-//console.log(even(arr));
-//f4()
+/console.log(even(arr));
+f4()
 
+  
 
 
 //5) Сделать функцию которая вернёт количество букв 'a' в переданном в неё слове.
