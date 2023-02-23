@@ -6,9 +6,7 @@ let item_2 = 3
 let item_3 = item_1 + item_2 
 //10. Создать переменную “item_4” 11. Присвоить переменной item_4 строку “Yolochka”
 let item_4 = "yolochka" 
-
 let sum = item_3 + item_4 
-
 let ymn = item_3 * item_4
 // 15. Создать переменную “item_5” 16.Присвоить переменной item_5 переменную item_3
 let item_5 = item_3 
