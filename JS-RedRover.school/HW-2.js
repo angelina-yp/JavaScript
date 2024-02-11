@@ -47,3 +47,9 @@ console.log("Knowledge of built-in JavaScript methods speeds up a tester's work.
 console.log("Knowledge of built-in JavaScript methods speeds up a tester's work.".replaceAll('l','L')); //Даёт такой же результат, как метод replace() с глобальным флагом g. Заменяет все найденные совпадения другой строкой или переданной функцией.
 console.log("Knowledge of built-in JavaScript methods speeds up a tester's work.".toLowerCase()); //Преобразует символы в строке в нижний регистр.
 console.log("Knowledge of built-in JavaScript methods speeds up a tester's work.".toUpperCase()); //Преобразует символы в строке в верхний регистр.
+//4.Нарисовать елочку
+console.log('   /\\');
+console.log('  /  \\');
+console.log(' /    \\');
+console.log('/______\\');
+console.log('   ||');
