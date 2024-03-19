@@ -53,7 +53,7 @@ console.log('  /  \\');
 console.log(' /    \\');
 console.log('/______\\');
 console.log('   ||');
-//5)Всем известно определение тестирования / testing. Но у нас все слова в определении перемешались с определением цель тестирования (цель проведения тестирования) /. Исправьте текст в соответствии с глосарием ISTQB:
+/*//5)Всем известно определение тестирования / testing. Но у нас все слова в определении перемешались с определением цель тестирования (цель проведения тестирования) /. Исправьте текст в соответствии с глосарием ISTQB:
 //testing – The process within the software development lifecycle that evaluates the quality of a component or system and related work products. test objective (The purpose for testing)
 //(тестирование – Процесс в рамках жизненного цикла разработки программного обеспечения, который оценивает качество компонента или системы, а также связанных с ними рабочих продуктов.)
 // wrongEnglishText = “testing – The process test within the objective software development The lifecycle purpose that evaluates for the testing quality of a component or system and related work products.”
@@ -72,4 +72,4 @@ if (wrongEnglishText === rightText) {
 }
 
 console.log(wrongEnglishText);
-console.log(rightText);
+console.log(rightText);*/
