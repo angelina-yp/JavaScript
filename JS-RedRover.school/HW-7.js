@@ -53,3 +53,16 @@ class Square extends shape{
 }
 let Square2 = new Square(3);
 Square2.calcArea()
+
+class Person {
+ 
+    constructor(name,age) {
+    this.name=name;
+      this.age=age;
+    }
+    getInfo(){
+   return`${this.name}'s age is ${this.age}`;
+  }
+  }
+  let get = new Person('john', 34);
+  console.log(get.getInfo());
