@@ -1,4 +1,20 @@
-var str="Hello World!";
-console.log(str.indexOf("e"))
-console.log(str.lastIndexOf("e"))
-console.log(str.search("e"))
+class Person {
+  constructor (first, last, age, gender, interests)
+{
+  this.name = {
+    first,
+    last,
+  };
+  this.age = age;
+  this.gender = gender;
+  this.interests = interests;
+
+}
+greeting(){
+
+  console.log("Hi! I'm" + this.name.first + ".");
+}
+
+
+
+}

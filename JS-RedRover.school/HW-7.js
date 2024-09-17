@@ -66,3 +66,107 @@ class Person {
   }
   let get = new Person('john', 34);
   console.log(get.getInfo());
+
+  /*3)Задача  Предустановленный код для вас - это class Dog:
+
+class Dog {
+  constructor(name, age, gender, species, size, master, loyal) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+    this.species = species;
+    this.legs = 4;
+    this.size = size;
+    this.master = master;
+    this.loyal = loyal;
+  }
+}
+Затем вам будет предоставлен рабочий код class Labrador в качестве начального кода.
+
+class Labrador {
+  constructor(name, age, gender, master) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+    this.species = "Labrador";
+    this.legs = 4;
+    this.size = "Large";
+    this.master = master;
+    this.loyal = true;
+  }
+}
+Сократите его, чтобы оно соответствовало строгим требованиям к количеству символов для этого ката.*/
+class Labrador extends Dog {
+    constructor(name, age, gender, master) {
+      super(name, age, gender, "Labrador", "Large", master, true);
+    }
+  }
+
+  /*4)Задача. Ваша задача - завершить этот класс, класс Person создан. Вы должны заполнить метод конструктора, чтобы принять имя в виде строки и возраст в виде числа, заполнить свойство get Info и метод getInfo / средство получения информации, которое должно возвращать johns age is 34*/
+  export class Person {
+ 
+    constructor(name,age) {
+    this.name=name;
+      this.age=age;
+    }
+    getInfo(){
+   return`${this.name}s age is ${this.age}`;
+  }
+  }
+  let get = new Person('john', 34);
+  console.log(get.getInfo());
+
+  /*5)Задача*/
+  class Person {
+    // Get coding in ES6 :D
+    constructor(firstName,lastName,age) {
+    this.firstName=firstName;
+      firstName="John";
+      this.lastName=lastName;
+      firstName="Doe";
+      this.age=age;
+      age=0;
+      this.gender=gender;
+      gender="Male";
+    }
+    sayFullName(){
+   return`${this.firstName} ${this.lastName}`;
+  }
+  }
+  let get = new Person('john', 34);
+  console.log(get.sayFullName());
+
+  /*5)Задача Определите a class Person со следующими свойствами:
+
+constructor Который принимает 4 аргумента: firstName/FirstName (значение по умолчанию "John", если не установлено), lastName/LastName (значение по умолчанию "Doe", если не установлено), age/Age (значение по умолчанию 0, если не установлено) и gender/Gender (значение по умолчанию "Male", если не установлено). Они должны храниться в this.firstName/this.FirstName, this.lastName/this.LastName, this.age/this.Age и this.gender/this.Gender соответственно.
+Метод sayFullName/SayFullName, который не принимает аргументов и возвращает полное имя (например, "John Doe")
+Класс / статический метод greetExtraTerrestrials/GreetExtraTerrestrials, который принимает один параметр raceName и возвращает "Welcome to Planet Earth raceName". Например, если название расы "Марсиане", оно должно гласить "Welcome to Planet Earth Martians"*/
+class Person {
+    constructor(firstName = "John", lastName = "Doe", age = 0, gender = "Male") {
+      this.firstName = firstName;
+      this.lastName = lastName;
+      this.age = age;
+      this.gender = gender;
+    }
+  
+    sayFullName() {
+      return `${this.firstName} ${this.lastName}`;
+    }
+  
+    static greetExtraTerrestrials(raceName) {
+      return `Welcome to Planet Earth ${raceName}`;
+    }
+  }
+  //6)Задача. Ваша задача - завершить этот класс, класс Person создан. Вы должны заполнить метод конструктора, чтобы принять имя в виде строки и возраст в виде числа, заполнить свойство get Info и метод getInfo / средство получения информации, которое должно возвращать johns age is 34
+  class Person {
+
+    constructor(name, age) {
+      this.name = name;
+      this.age = age;
+    }
+    
+    get info() {
+      return `${this.name}s age is ${this.age}`;
+    }
+    
+  }

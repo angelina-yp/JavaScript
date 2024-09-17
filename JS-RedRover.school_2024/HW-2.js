@@ -81,3 +81,4 @@ else if (res == h) {
     console.log(++day, 'дня')
 }
 res -= b1
+
