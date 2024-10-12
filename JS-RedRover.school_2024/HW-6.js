@@ -13,4 +13,14 @@
       console.log(checkPalindrom ("anna"))
 
 
-
+//2)Я хотел бы, чтобы вы написали мне функцию, которая при задании числа n (n >= 1 ) возвращает n-е число в последовательности Фибоначчи.
+      function nthFibo(n) {
+        let a = 0, b = 1;
+        
+        for (let i = 3; i <= n; i++) {
+          let c = a + b;
+          a = b;
+          b = c;
+        }
+        return n == 1? a: b;
+      }
