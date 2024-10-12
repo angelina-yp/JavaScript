@@ -80,15 +80,7 @@
 // }
 // console.log(arr1);
 
-
-
-
-
-
-
-
-
-
+console.log('=======================');
 
 // 1.Нарисуйте ромб*
 
@@ -111,6 +103,34 @@
 //        12321
 //         121
 //          1
+// let romb = '';
+// let space = ' ';
+// let x = 10;
+// for (let i = 1; i <= x; i++) {
+//   romb += space.repeat(x - i)
+//   for (let j = 1; j <= i; j++) {
+//     if (j == 10) {
+//     romb += 0;
+//     }
+//     else romb += j;
+//   }
+//   for (let j = i - 1; j >= 1; j--) {
+//     romb += j;
+//   }
+//   romb += '\n';
+// }
+// x = 9;
+// for (let i = 1; i <= x; i++) {
+//   romb += space.repeat(i)
+//   for (let j = 1; j <= x + 1 - i; j++) {
+//     romb += j;
+//   }
+//   for (let j = x - i; j >= 1; j--) {
+//     romb += j;
+//   }
+//   romb += '\n';
+// }
+// console.log(romb);
 // 2. Нарисуйте елочку
 //     *
 //    ***
@@ -135,10 +155,81 @@
 // 3 7 10 
 // 4 8 11 13 
 // 5 9 12 14 15
-
+//   let space = ' ';
+//   let tr = '';
+//   let x = 5
+//   for (let i = 1; i <= x; i++) {
+//     let num = i;
+//     for (let j = 1; j <= i; j++) {
+//         tr += num + space;
+//         num = num + (x - j);
+//     }
+//     tr += '\n';
+//   }
+//   console.log(tr)
 // Часть 2
 // 4. Усовершенствуйте решение задачи про улитку с помощью  наиболее подходящего цикла. 
+
+// function daysToClimbWall(height, dayClimb, nightSlide) {
+//     let currentHeight = 0;
+//     let days = 0;
+  
+
+//     while (currentHeight < height) {
+//         days++; // увеличение счётчика дней
+//         currentHeight += dayClimb; // улитка ползёт вверх
+//         if (currentHeight >= height) {
+//             break; // проверка на достижение высоты
+//         }
+//         currentHeight -= nightSlide; // улитка скользит вниз
+//     }
+
+//     return days;
+// }
+// let wallHeight = 5; // высота стены в метрах
+// let daytimeClimb = 3; // подъем за день в метрах
+// let nighttimeSlide = 2; // скольжение вниз за ночь в метрах
+
+
+// let result = daysToClimbWall(wallHeight, daytimeClimb, nighttimeSlide);
+// console.log(`Улитка достигнет вершины стены через ${result} дней.`);
+ 
 // 5. Задача с интервью*
 // У вас есть массив с тремя видами скобок, предположим 
 // [ ‘{‘, ‘)’, ‘(‘, ‘)’, ‘)’, ‘}, ‘[‘, ‘]’, ‘)’] . Количество элементов и последовательность может быть разной.
 // Нужно выяснить, все ли скобки являются парными  в правильной последовательности (открывающая и затем закрывающая). Также, скобки могут быть вложенными, но тем не менее, если последовательность соблюдена, то они считаются парными.
+// let result1 = 0;
+// let result2 = 0;
+// let result3 = 0;
+// let arrN = ['(', ')', '[', ']', '{'];
+
+// for (let i in arrN) {
+//   if (arrN[i] == '(' )  result1 ++
+//    else if (arrN[i] == ')' )  result1 --
+  
+//   if (result1 < 0) {
+//     console.log ('wrong sequance "()"')
+//     break
+//   }
+//   if (arrN[i] == '{' ) result2 ++
+//    else if (arrN[i] == '}' ) result2 --
+  
+//   if (result2 < 0) {
+//     console.log ('wrong sequance "{}"')
+//     break
+//   }
+//   if (arrN[i] == '[' )  result3 ++
+//    else if (arrN[i] == ']' )  result3 --
+  
+//   if (result3 < 0) {
+//     console.log ('wrong sequance "[]"')
+//     break
+//   }
+//   //console.log(result1, result2, result3)
+// }
+//  if (result1== 0 && result2 == 0 && result3 == 0 ) console.log('все хорошо')
+//    else if (result1 > 0 || result2 > 0 || result3 > 0 ) console.log('ошибка')
+
+
+
+
